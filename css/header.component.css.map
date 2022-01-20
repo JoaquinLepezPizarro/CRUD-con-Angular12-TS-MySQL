@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,WAAW;CAChC",
+    "sources": [
+        "../sprint1/src/app/header/header.component.scss"
+    ],
+    "names": [],
+    "file": "header.component.css"
+}

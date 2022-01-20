@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,cAAc,CAAA;EACV,MAAM,EAAC,EAAE;CACZ;;AAED,AAAA,YAAY,CAAA;EACR,OAAO,EAAC,IAAI;CACf;;AAED,AAAA,YAAY,CAAC,EAAE,CAAA;EACX,UAAU,EAAC,IAAI;EACf,YAAY,EAAC,KAAK;EAClB,YAAY,EAAE,GAAG;EACjB,YAAY,EAAE,KAAK;EACnB,gBAAgB,EAAE,UAAU;EAC5B,YAAY,EAAE,EAAE;EAChB,WAAW,EAAE,EAAE;EACf,aAAa,EAAE,EAAE;EACjB,WAAW,EAAC,EAAE;EACd,cAAc,EAAC,EAAE;CACpB;;AAED,AAAA,QAAQ,CAAA;EACJ,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "../sprint1/src/app/marca/mostrar-marca/mostrar-marca.component.scss"
+    ],
+    "names": [],
+    "file": "mostrar-marca.component.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sprint1/src/app/producto/editar-producto/editar-producto.component.scss"
+    ],
+    "names": [],
+    "file": "editar-producto.component.css"
+}

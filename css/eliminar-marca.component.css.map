@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sprint1/src/app/marca/eliminar-marca/eliminar-marca.component.scss"
+    ],
+    "names": [],
+    "file": "eliminar-marca.component.css"
+}

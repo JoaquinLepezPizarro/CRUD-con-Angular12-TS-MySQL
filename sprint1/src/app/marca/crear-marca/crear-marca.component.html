@@ -1,0 +1,41 @@
+<div id=cajaPrincipal>
+    <h1>Agregar una nueva marca</h1>
+    <div id="formularioCrearMarca">
+        <form [formGroup]="nuevaMarca">
+            <div>
+                <label for="nombre">Nombre de la marca: </label>
+                <input id="nombre" type="text" formControlName="nombre" >
+            </div>
+        </form>
+    </div>
+    
+    <div id="botonCrearMarca">
+        <button type="button" [routerLink]="['/mostrar-marca']" (click)="agregarMarca(nuevaMarca)">Crear Marca</button>
+    </div>
+</div>
+
+<!--
+    <div id=cajaPrincipal>
+    <h1>Agregar una nueva marca</h1>
+    <div id="formularioCrearMarca">
+        <form [formGroup]="nuevaMarca">
+            <div>
+                <label for="nombre">Nombre de la marca: </label>
+                <input id="nombre" type="text" formControlName="nombre" >
+            </div>
+            <div>
+                <label for="fechaCreacion">Fecha de creacion: </label>
+                <input id="fechaCreacion" type="date" formControlName="fechaCreacion" >
+            </div>
+            <div>
+                <label for="fechaActualizacion">Fecha de modificacion: </label>
+                <input id="fechaActualizacion" type="date" formControlName="fechaActualizacion" >
+            </div>
+        </form>
+    </div>
+    
+    <div id="botonCrearMarca">
+        <button type="button" [routerLink]="['/mostrar-marca']" (click)="agregarMarca(nuevaMarca)">Crear Marca</button>
+    </div>
+</div>
+-->

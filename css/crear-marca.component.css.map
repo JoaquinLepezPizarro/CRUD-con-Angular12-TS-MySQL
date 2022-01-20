@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,MAAM,EAAC,EAAE;CACZ",
+    "sources": [
+        "../sprint1/src/app/marca/crear-marca/crear-marca.component.scss"
+    ],
+    "names": [],
+    "file": "crear-marca.component.css"
+}

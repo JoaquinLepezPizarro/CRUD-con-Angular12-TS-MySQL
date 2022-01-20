@@ -1,0 +1,63 @@
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------MOSTRAR------------------------------------------------------------------------>  
+<!-------------------------------------------------------------------------------------------------------------------------->  
+<div id=cajaPrincipal *ngIf="flag == 'mostrar'">
+    <h1>Listado de Productos</h1>
+    <div id="listaProductos">
+        <ul id="producto" *ngFor="let productos of datosProducto" let="contProductos()"> 
+            <div *ngIf="productos != null">
+                <li>Nombre:  {{productos.nombre}}</li>
+                <li>Valor:  {{productos.valor}}</li>
+                <li>Fecha de Creacion: {{productos.fechaCreacion}}</li>
+                <li>Fecha de Actualizacion: {{productos.fechaActualizacion}}</li>
+                <li>Estado:  {{productos.estado}}</li>
+                <li>Marca: {{productos.nombreMarca}}</li>
+            </div>
+            <br>
+            <li id="botones">
+                <div>
+                    <button type="button" (click)="mostrarProducto(productos.id); metodoFlag('editar')">Editar</button>
+                    <button [routerLink]="['/mostrar-producto']" (click)="eliminarProducto(productos.id); actualizarPagina()">Eliminar</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------EDITAR------------------------------------------------------------------------>  
+<!-------------------------------------------------------------------------------------------------------------------------->  
+<div *ngIf="flag == 'editar'">
+	<div id=cajaPrincipal>
+        <div>
+            <h1>Modificar los datos de un producto existente</h1><br><br>
+            <div id="formularioEditarProducto" *ngFor="let productos of datosProducto"> 
+                <div *ngIf="productos.id == auxId">    
+                    <form [formGroup]="nuevoProducto">
+                        <br>   
+                        <div>
+                            <label for="nombre">Nombre del producto: </label>
+                            <input id="nombre" type="text" formControlName="nombre"  [(ngModel)]="productos.nombre">
+                        </div>
+                        <div>
+                            <label for="valor">Valor del producto: </label>
+                            <input id="valor" type="text" formControlName="valor" [(ngModel)]="productos.valor">
+                        </div>
+                        <div>
+                            <label for="estado">Estado del producto: </label>
+                            <input id="estado" type="text" formControlName="estado" [(ngModel)]="productos.estado">
+                        </div>
+                        <div>
+                            <label for="nombreMarca">Nombre de la marca: </label>
+                            <select name="nombreMarca" id="nombreMarca" formControlName="nombreMarca">
+                                <option disabled>Antigua marca {{productos.nombreMarca}}</option>
+                                <option *ngFor="let marca of datosMarca">{{marca.nombre}}</option>
+                            </select>
+                        </div>
+                        <button type="button" (click)="editarProducto(nuevoProducto); metodoFlag('mostrar'); actualizarPagina()">Actualizar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

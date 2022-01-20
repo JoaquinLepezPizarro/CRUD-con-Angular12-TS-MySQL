@@ -1,0 +1,29 @@
+<div id=cajaPrincipal>
+    <h1>Agregar una nuevo producto</h1>
+    <div id="formularioCrearProducto">
+        <form [formGroup]="nuevoProducto">
+            <div>
+                <label for="nombre">Nombre del producto: </label>
+                <input id="nombre" type="text" formControlName="nombre" >
+            </div>
+            <div>
+                <label for="valor">Valor del producto: </label>
+                <input id="valor" type="text" formControlName="valor">
+            </div>
+            <div>
+                <label for="estado">Estado del producto: </label>
+                <input id="estado" type="text" formControlName="estado" >
+            </div>
+            <div>
+                <label for="nombreMarca">Nombre de la marca: </label>
+                <select name="nombreMarca" id="nombreMarca" formControlName="nombreMarca">
+                    <option *ngFor="let marca of datosMarca">{{marca.nombre}}</option>
+                </select>
+            </div>
+        </form>
+    </div>
+    
+    <div id="botonCrearMarca">
+        <button type="button" [routerLink]="['/mostrar-producto']" (click)="agregarProducto(nuevoProducto)">Crear Producto</button>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sprint1/src/app/marca/editar-marca/editar-marca.component.scss"
+    ],
+    "names": [],
+    "file": "editar-marca.component.css"
+}

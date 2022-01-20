@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAA;EACV,MAAM,EAAC,EAAE;CACZ;;AAED,AAAA,eAAe,CAAA;EACX,OAAO,EAAC,IAAI;CACf;;AAED,AAAA,eAAe,CAAC,EAAE,CAAA;EACd,UAAU,EAAC,IAAI;EACf,YAAY,EAAC,KAAK;EAClB,YAAY,EAAE,GAAG;EACjB,YAAY,EAAE,KAAK;EACnB,gBAAgB,EAAE,UAAU;EAC5B,YAAY,EAAE,EAAE;EAChB,WAAW,EAAE,EAAE;EACf,aAAa,EAAE,EAAE;EACjB,WAAW,EAAC,EAAE;EACd,cAAc,EAAC,EAAE;CACpB;;AAED,AAAA,QAAQ,CAAA;EACJ,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "../sprint1/src/app/producto/mostrar-producto/mostrar-producto.component.scss"
+    ],
+    "names": [],
+    "file": "mostrar-producto.component.css"
+}
